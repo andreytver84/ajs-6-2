@@ -21,5 +21,5 @@ console.log(sum([1, 2]));
 }; */
 
 export default function specAtackGet({ special }) {   
-    return special.map(({ description = 'Описание недоступно', ...item }) => ({ ...item, description  });
+    return special.map(({ description = 'Описание недоступно', ...item }) => ({ description, ...item  }))
 };
