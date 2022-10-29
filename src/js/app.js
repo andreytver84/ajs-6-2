@@ -5,7 +5,7 @@ console.log('worked');
 
 console.log(sum([1, 2]));
 
-export default function specAtackGet(obj) {   
+/* export default function specAtackGet(obj) {   
     let specAtackArr;
     let specAtackArrRes = [];
     for (let key in obj) {
@@ -18,4 +18,8 @@ export default function specAtackGet(obj) {
         }
     }
     return specAtackArrRes;    
+}; */
+
+export default function specAtackGet({ special }) {   
+    return special.map(({ description = 'Описание недоступно', ...item }) => ({ ...item, description  });
 };
